@@ -1,0 +1,17 @@
+import React from 'react';
+import Card from './Card';
+
+const List = props => {
+  const {products, category} = props
+  const fruits =products[category]   
+  return (
+    <div className="col-sm">
+    <div className="row">
+{fruits.map((fruit,index) => <Card key={index} fruit={fruit}/>)}
+
+    </div>
+  </div>
+  );
+};
+
+export default List;
