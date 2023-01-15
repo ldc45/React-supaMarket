@@ -11,7 +11,7 @@ const Home = () => {
     setCategory(i)
   }
 
-  const [filtered, setFiltered] = useState(false)
+  const [filterred, setFiltered] = useState(false)
   const [isFiltering, setFiltering] =useState(false)
   const filterResults = (input) => {
     let fullList = list.flat()

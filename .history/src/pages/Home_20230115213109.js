@@ -11,16 +11,16 @@ const Home = () => {
     setCategory(i)
   }
 
-  const [filtered, setFiltered] = useState(false)
+  const [filterred, setFiltered] = useState(false)
   const [isFiltering, setFiltering] =useState(false)
   const filterResults = (input) => {
     let fullList = list.flat()
-    let resultFiltered = fullList.filter((product) => {
+    let filtered = fullList.filter((product) => {
       const name = product.name.toLowerCase()
       const term = input.toLowerCase()
       return name.indexOf(term) > -1
     })
-   setFiltered(resultFiltered)
+   setFiltered
   }
   useEffect(()=>{
     console.log(isFiltering)
@@ -32,7 +32,7 @@ const Home = () => {
       <div className="container">
         <div className="row">
           <SideMenu loadCategory={loadCategory} category={category} />
-          <List grocery={isFiltering? filtered : list[category]} category={category} />
+          <List grocery={list[category]} category={category} />
         </div>
       </div>
     </div>

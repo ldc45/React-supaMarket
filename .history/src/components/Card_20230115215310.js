@@ -21,12 +21,12 @@ const Card = (props) => {
               <p>
                 €{product.price}/{product.unit}
               </p>
-              <button className="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target={`#${product.ref}`}>view product</button>
+              <button className="btn btn-warning btn-sm">view product</button>
             </div>
           </div>
         </div>
       </div>
-     <Modal product = {product}/>
+     <Modal/>
     </div>
   )
 }

@@ -9,7 +9,7 @@ const Navigation = ({filter, setFiltering}) => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <form className="d-flex mt-2 ms-auto">
+        <form className="d-flex mt-2">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" 
           onChange={(e) => {
             setFiltering(e.target.value.length > 0)
