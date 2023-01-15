@@ -1,6 +1,6 @@
 
 
-const SideMenu = ({loadCategory, category}) => {
+const SideMenu = ({loadCategory}) => {
   const links = ['Fruits', 'Légumes', 'Produits Frais', 'Épicerie', 'Boissons']
 
   return (
@@ -8,7 +8,7 @@ const SideMenu = ({loadCategory, category}) => {
       <ul>
         {links.map((link, index) => {
           return (
-            <li className={category === index && 'active'} key={index} onClick={() => loadCategory(index)}>
+            <li className=" key={index} onClick={() => loadCategory(index)}>
               {link}
             </li>
           )

@@ -12,7 +12,7 @@ const Store = () => {
     <div className='container'>
       <div className="row">
      <SideMenu loadCategory={loadCategory} category={category}/>
-     <List grocery= {list[category]} category={category}/>  
+     <List grocery= {list[category]   } category={category}/>  
       </div>
     </div>
   );

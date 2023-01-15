@@ -2,12 +2,12 @@ import React from 'react';
 import Card from './Card';
 
 const List = props => {
-  const {grocery} = props
-
+  const {grocery, category} = props
+  const products =grocery[category]   
   return (
     <div className="col-sm">
     <div className="row">
-{grocery.map((product,index) => <Card key={index} product={product}/>)}
+{products.map((produ,index) => <Card key={index} produ={produ}/>)}
 
     </div>
   </div>

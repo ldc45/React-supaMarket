@@ -7,7 +7,7 @@ const List = props => {
   return (
     <div className="col-sm">
     <div className="row">
-{grocery.map((product,index) => <Card key={index} product={product}/>)}
+{grocer.map((product,index) => <Card key={index} product={product}/>)}
 
     </div>
   </div>

@@ -11,8 +11,8 @@ const Store = () => {
   return (
     <div className='container'>
       <div className="row">
-     <SideMenu loadCategory={loadCategory} category={category}/>
-     <List grocery= {list[category]} category={category}/>  
+     <SideMenu loadCategory={loadCategory} />
+     <List grocery= {list} category={category}/>  
       </div>
     </div>
   );
