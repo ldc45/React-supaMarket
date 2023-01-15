@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState } from 'react'
 import List from '../components/List'
 import SideMenu from '../components/SideMenu'
 import { list } from '../data'
@@ -6,7 +6,6 @@ import Navigation from '../components/Navigation'
 
 const Home = () => {
   const [category, setCategory] = useState(0)
-  const [isFiltering, setFiltering] =useState(false)
   const loadCategory = (i) => {
     setCategory(i)
   }
@@ -17,7 +16,7 @@ const Home = () => {
       const term = input.toLowerCase()
       return name.indexOf(term) > -1
     })
-    console.log(filtered);
+    c
   }
   return (
     <div>

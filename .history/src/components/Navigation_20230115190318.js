@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navigation = ({filter}) => {
+const Navigation = () => {
   return (
     <nav className=" orange navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div className="container-fluid">
@@ -10,7 +10,7 @@ const Navigation = ({filter}) => {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <form className="d-flex mt-2">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={(e)=> filter(e.target.value) }></input>
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={e =>}></input>
           <button className="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>

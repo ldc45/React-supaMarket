@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState, useEffec } from 'react'
 import List from '../components/List'
 import SideMenu from '../components/SideMenu'
 import { list } from '../data'
