@@ -14,7 +14,7 @@ const Home = () => {
   const [filtered, setFiltered] = useState(false)
   const [isFiltering, setFiltering] =useState(false)
   const filterResults = (input) => {
-    // La méthode flat() permet de créer un nouveau tableau contenant les éléments des sous-tableaux
+    
     let fullList = list.flat()
     let resultFiltered = fullList.filter((product) => {
       const name = product.name.toLowerCase()
