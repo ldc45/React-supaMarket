@@ -5,6 +5,7 @@ import { list } from '../data'
 import Navigation from '../components/Navigation'
 
 const Home = () => { 
+  const [count, setCount] = useState(1);
 
   const [category, setCategory] = useState(0)
   const loadCategory = (i) => {
@@ -29,11 +30,11 @@ const Home = () => {
 
   return (
     <div>
-      <Navigation filter={filterResults} setFiltering={setFiltering} />
+      <Navigation filter={filterResults} setFiltering={setFiltering} count={count}  />
       <div className="container">
         <div className="row">
           <SideMenu loadCategory={loadCategory} category={category} />
-          <List grocery={isFiltering? filtered : list[category]} category={category} />
+          <List grocery={isFiltering? filtered : list[category]} category={category} addToCart={setCount} count={count} />
         </div>
       </div>
     </div>
