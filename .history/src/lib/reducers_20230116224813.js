@@ -1,5 +1,5 @@
 import { actions } from "./action";
-// à revoir
+dd
 const initialState ={
   products : []
 }
