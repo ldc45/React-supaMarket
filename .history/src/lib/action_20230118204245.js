@@ -23,7 +23,7 @@ export function addtoCart(product, quantity){
 export function updateCart(id, quantity){
   return {
     type: actions.UPDATE_CART,
-    payload : {id:id, quantity: quantity,}
+    payload : {product: product, quantity: quantity,}
   }
 }
 

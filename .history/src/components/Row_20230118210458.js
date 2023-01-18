@@ -17,7 +17,7 @@ const Row = (props) => {
 
   useEffect(() => {
     dispatch(updateCart(id, localCartQty))
-  },[localCartQty,dispatch,id])
+  }, [loca])
 
   const remove = product =>{
     dispatch(removeFromCart(product))

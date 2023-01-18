@@ -1,8 +1,13 @@
+import React, { useEffect } from 'react';
 import Row from './Row';
-
+import {  useSelector } from 'react-redux';
 
 const Table = ({products}) => {
- 
+  const products = useSelector(state => state.products)
+
+  useEffect(()=> {
+    console.log(`You have ${products.length} in your cart`)
+  })
     return (
         <div>
              <table>

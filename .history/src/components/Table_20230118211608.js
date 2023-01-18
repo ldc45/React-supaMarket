@@ -1,5 +1,6 @@
+import React, { useEffect } from 'react';
 import Row from './Row';
-
+import {  useSelector } from 'react-redux';
 
 const Table = ({products}) => {
  

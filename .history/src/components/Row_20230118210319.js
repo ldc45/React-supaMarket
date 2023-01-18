@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { updateCart, removeFromCart } from '../lib/action';
 
@@ -16,8 +16,8 @@ const Row = (props) => {
   }
 
   useEffect(() => {
-    dispatch(updateCart(id, localCartQty))
-  },[localCartQty,dispatch,id])
+    dispatch(updateCart(id, qty))
+  }, [qty])
 
   const remove = product =>{
     dispatch(removeFromCart(product))

@@ -9,13 +9,13 @@ export default function onlineStoreApp(state = initialState, action){
 
     case actions.ADD_TO_CART: return Object.assign({}, state, {products: [...state.products, action.payload]});
     case actions.UPDATE_CART : 
-        console.log(`product : ${action.payload.id}`)
+        console.log(`item : ${action.payload.id}`)
         return Object.assign({}, state, {
-            products : state.products.map(product => {
-                return product.id === action.payload.id ?
-                Object.assign({}, product, {
+            items : state.items.map(item => {
+                return item.id === action.payload.id ?
+                Object.assign({}, item, {
                     quantity: action.payload.quantity
-                }) : product;
+                }) : item;
             }) 
         });
 

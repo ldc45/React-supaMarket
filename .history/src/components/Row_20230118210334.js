@@ -14,10 +14,10 @@ const Row = (props) => {
     if (action === 'increment') { setlocalCartQty(localCartQty + 1) }
     if (action === 'decrement') { setlocalCartQty(localCartQty - 1) }
   }
-
+useEffet
   useEffect(() => {
-    dispatch(updateCart(id, localCartQty))
-  },[localCartQty,dispatch,id])
+    dispatch(updateCart(id, qty))
+  }, [qty])
 
   const remove = product =>{
     dispatch(removeFromCart(product))

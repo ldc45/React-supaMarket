@@ -15,9 +15,7 @@ const Row = (props) => {
     if (action === 'decrement') { setlocalCartQty(localCartQty - 1) }
   }
 
-  useEffect(() => {
-    dispatch(updateCart(id, localCartQty))
-  },[localCartQty,dispatch,id])
+ 
 
   const remove = product =>{
     dispatch(removeFromCart(product))

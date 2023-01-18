@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { updateCart, removeFromCart } from '../lib/action';
 
@@ -10,14 +10,9 @@ const Row = (props) => {
   
   const dispatch = useDispatch()
 
-  const update = (action) => {
-    if (action === 'increment') { setlocalCartQty(localCartQty + 1) }
-    if (action === 'decrement') { setlocalCartQty(localCartQty - 1) }
+  const update = () =>{
+    dispatch(updateCart(id,localCartQty))
   }
-
-  useEffect(() => {
-    dispatch(updateCart(id, localCartQty))
-  },[localCartQty,dispatch,id])
 
   const remove = product =>{
     dispatch(removeFromCart(product))
@@ -40,9 +35,7 @@ const Row = (props) => {
             <button
               type="button"
               className="btn btn-secondary"
-              onClick={() => {
-                if (localCartQty > 1) {update('decrement') }
-              }}
+              onClick={()=> { if (qty > 1) {update('decrement') }}
               >
               -
             </button>
@@ -50,7 +43,9 @@ const Row = (props) => {
             <button
               type="button"
               className="btn btn-secondary"
-              onClick={() =>  {update('increment')}}
+              onClick={()=> {
+                onClick={() =>  {update('increment')}}
+              }}
               >
               +
             </button>

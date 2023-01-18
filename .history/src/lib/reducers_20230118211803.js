@@ -12,7 +12,7 @@ export default function onlineStoreApp(state = initialState, action){
         console.log(`product : ${action.payload.id}`)
         return Object.assign({}, state, {
             products : state.products.map(product => {
-                return product.id === action.payload.id ?
+                return product.id === action.payload.product.id ?
                 Object.assign({}, product, {
                     quantity: action.payload.quantity
                 }) : product;
