@@ -9,7 +9,7 @@ const Cart = () => {
   const [subTotal, setSubTotal] = useState(0.00)
   const [total, setTotal] = useState(0.00)
   const shipping = 10.00
-  useEffect(() => {
+  useEffect(([products, subTotal]) => {
     let totals = products.map(product => {
       return product.quantity * product.details.price
     })
@@ -17,7 +17,7 @@ const Cart = () => {
     setTotal(subTotal + shipping)
     // console.log(`Subtotal:  €${subTotal} `)
     // console.log(`You have ${products.length} in your cart`)
-  },[products, subTotal, total])
+  })
   
   return (
     <div className='container'>
@@ -49,7 +49,7 @@ const Cart = () => {
         <li className="list-group-product ">
           <ul className="list-group flex">
             <li className="text-left">Total</li>
-            <li className="text-right">€{subTotal === 0.00 ? '0.00' :total.toFixed(2)}</li>
+            <li className="text-right">€{subTotal === 0.00 ? 0.000 :total.toFixed(2)}</li>
           </ul>
         </li>
       </ul>

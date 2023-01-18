@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Navigation from '../components/Navigation';
 import Table from '../components/Table';
@@ -10,14 +10,14 @@ const Cart = () => {
   const [total, setTotal] = useState(0.00)
   const shipping = 10.00
   useEffect(() => {
-    let totals = products.map(product => {
-      return product.quantity * product.details.price
+    let totals = products.map(item => {
+      return item.quantity * item.details.price
     })
-    setSubTotal(totals.reduce((product1, product2) => product1 + product2, 0))
+    setSubTotal(totals.reduce((item1, item2) => item1 + item2, 0))
     setTotal(subTotal + shipping)
     // console.log(`Subtotal:  €${subTotal} `)
     // console.log(`You have ${products.length} in your cart`)
-  },[products, subTotal, total])
+  })
   
   return (
     <div className='container'>
@@ -28,12 +28,12 @@ const Cart = () => {
     </div>
     <div className="col-sm-3 order-summary">
       <ul className="list-group">
-        <li className="list-group-product">Order Summary</li>
+        <li className="list-group-item">Order Summary</li>
     
-        <li className="list-group-product">
+        <li className="list-group-item">
           <ul className="list-group flex">
             <li className="text-left">Subtotal</li>
-            <li className="text-right">€{subTotal.toFixed(2)}</li>
+            <li className="text-right">€{subTotal}</li>
           </ul>
           <ul className="list-group flex">
             <li className="text-left">shipping</li>
@@ -46,10 +46,10 @@ const Cart = () => {
           </ul>
         </li>
     
-        <li className="list-group-product ">
+        <li className="list-group-item ">
           <ul className="list-group flex">
             <li className="text-left">Total</li>
-            <li className="text-right">€{subTotal === 0.00 ? '0.00' :total.toFixed(2)}</li>
+            <li className="text-right">€0.00</li>
           </ul>
         </li>
       </ul>

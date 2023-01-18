@@ -17,7 +17,7 @@ const Cart = () => {
     setTotal(subTotal + shipping)
     // console.log(`Subtotal:  €${subTotal} `)
     // console.log(`You have ${products.length} in your cart`)
-  },[products, subTotal, total])
+  })
   
   return (
     <div className='container'>
@@ -33,7 +33,7 @@ const Cart = () => {
         <li className="list-group-product">
           <ul className="list-group flex">
             <li className="text-left">Subtotal</li>
-            <li className="text-right">€{subTotal.toFixed(2)}</li>
+            <li className="text-right">€{subTotal}</li>
           </ul>
           <ul className="list-group flex">
             <li className="text-left">shipping</li>
@@ -49,7 +49,7 @@ const Cart = () => {
         <li className="list-group-product ">
           <ul className="list-group flex">
             <li className="text-left">Total</li>
-            <li className="text-right">€{subTotal === 0.00 ? '0.00' :total.toFixed(2)}</li>
+            <li className="text-right">€{subTotal === 0.00 ? 0.000 :total}</li>
           </ul>
         </li>
       </ul>
