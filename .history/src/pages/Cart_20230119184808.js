@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Table from '../components/Table';
 
@@ -54,11 +53,15 @@ const Cart = () => {
           </ul>
         </li>
       </ul>
-    
-        <Link to="/checkout" className={`white btn btn-light btn-block checkout bg-crimson ${!products.length && 'disabled'}`}>Checkout</Link>
-      
-     
-
+      <button
+        type="button"
+        className="btn btn-light btn-lg btn-block checkout bg-crimson"
+        disabled={!products.len}
+      >
+        <a href="/" className="white">
+          Checkout
+        </a>
+      </button>
     </div>
     </div></div>
     

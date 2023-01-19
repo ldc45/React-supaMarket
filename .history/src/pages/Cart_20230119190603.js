@@ -37,7 +37,7 @@ const Cart = () => {
             <li className="text-right">€{subTotal.toFixed(2)}</li>
           </ul>
           <ul className="list-group flex">
-            <li className="text-left">shipping</li>
+            <li className="text-left list-group-item">shipping</li>
             <li className="text-right">€{shipping.toFixed(2)}</li>
           </ul>
           <ul className="list-group flex">

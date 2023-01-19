@@ -14,13 +14,14 @@ const App = props => {
 
   return (
    <BrowserRouter>
-    <UserProfileContextProvider>
    <Routes>
+    <UserProfileContext.Provider>
   <Route path="/" element={<Home />}/>
   <Route path="/cart" element={<Cart />}/>
   <Route path="/checkout" element={<Checkout />}/>
+  </UserProfileContext.Provider>
    </Routes>
-   </UserProfileContextProvider>
+   
    </BrowserRouter>
 
   );

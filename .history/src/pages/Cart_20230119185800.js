@@ -54,11 +54,14 @@ const Cart = () => {
           </ul>
         </li>
       </ul>
-    
-        <Link to="/checkout" className={`white btn btn-light btn-block checkout bg-crimson ${!products.length && 'disabled'}`}>Checkout</Link>
+      <button
+        type="button"
+        className=""
+        disabled={!products.length}
+      >
+        <Link to="/checkout" className="white">Checkout</Link>
       
-     
-
+      </button>
     </div>
     </div></div>
     
