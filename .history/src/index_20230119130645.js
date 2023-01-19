@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './lib/store';
 import './styles/App.css';
-import { AppContainer} from './container/AppContainer';
+import { AppContainer, HomeContainer } from './container/AppContainer';
 
 
 

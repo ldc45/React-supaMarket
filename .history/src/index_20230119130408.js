@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './lib/store';
+
 import './styles/App.css';
-import { AppContainer} from './container/AppContainer';
+import { HomeContainer } from './container/HomeContainer';
 
 
 
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store = {store}>
-      <AppContainer />
+      <HomeContainer />
     </Provider>
   </React.StrictMode>
 );

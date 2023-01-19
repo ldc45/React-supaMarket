@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './lib/store';
+import App from './App';
 import './styles/App.css';
-import { AppContainer} from './container/AppContainer';
 
 
 
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store = {store}>
-      <AppContainer />
+      <Home />
     </Provider>
   </React.StrictMode>
 );

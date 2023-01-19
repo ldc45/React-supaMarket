@@ -11,4 +11,4 @@ function mapDispatchToProps(dispatch) {
   saveLocalStorage :products => dispatch(saveCart(products))
   }
 }
-  )(Home)
+  )(App)

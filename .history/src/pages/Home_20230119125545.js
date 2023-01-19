@@ -1,13 +1,13 @@
-import { React, useState} from 'react'
+import { React, useState, useEffect } from 'react'
 import List from '../components/List'
 import SideMenu from '../components/SideMenu'
 import { list } from '../data'
 import Navigation from '../components/Navigation'
 
 
-const Home = () => { 
+const Home = props => { 
 
-  //const [count, setCount] = useState(1);
+  const [count, setCount] = useState(1);
   const [category, setCategory] = useState(0)
   const loadCategory = (i) => {
     setCategory(i)
@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navigation filter={filterResults} setFiltering={setFiltering} /> 
+      <Navigation filter={filterResults} setFiltering={setFiltering} count={count}  />
       <div className="container">
         <div className="row">
           <SideMenu loadCategory={loadCategory} category={category} />

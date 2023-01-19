@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navigation filter={filterResults} setFiltering={setFiltering} /> 
+      <Navigation filter={filterResults} setFiltering={setFiltering} {/*count={count} *\} />
       <div className="container">
         <div className="row">
           <SideMenu loadCategory={loadCategory} category={category} />
