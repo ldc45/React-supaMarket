@@ -1,7 +1,6 @@
 
 
-import React from 'react';
-
+rsc
 const SideMenu = ({loadCategory, category}) => {
   const links = ['Fruits', 'Légumes', 'Produits Frais', 'Épicerie', 'Boissons']
 

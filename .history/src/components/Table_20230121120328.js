@@ -1,6 +1,6 @@
 import Row from './Row';
-import React from 'react';
 
+rsc
 const Table = ({products}) => {
  
     return (

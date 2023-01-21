@@ -1,4 +1,5 @@
 import Row from './Row';
+
 import React from 'react';
 
 const Table = ({products}) => {
