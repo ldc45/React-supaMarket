@@ -7,12 +7,10 @@ import { AppContainer} from './container/AppContainer';
 
 
 
-// Log the initial state
-console.log(store.getState())
-const unsubscribe = store.subscribe(() => console.log(store.getState()))
-//store.dispatch(addtoCart({name: "citron"}, 2))
-//store.dispatch(addtoCart({name: "kiwi"}, 5))
-unsubscribe()
+//console.log(store.getState())
+// const unsubscribe = store.subscribe(() => console.log(store.getState()))
+//store.dispatch(addtoCart(5, {name:"kiwi"}))
+
 
 
 

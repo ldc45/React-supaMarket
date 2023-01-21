@@ -13,17 +13,16 @@ const App = props => {
   }, [products, saveLocalStorage])
 
   return (  
-
-   <BrowserRouter> 
-    <UserProfileContextProvider>
-   <Routes>
+ 
+   <BrowserRouter>
+   <Routes> <UserProfileContextProvider>
   <Route path="/" element={<Home />}/>
   <Route path="/cart" element={<Cart />}/>
   <Route path="/checkout" element={<Checkout />}/>
-    {/* Ce path affiche la page d'accueil si l'url ne correspond à rien */}
-    <Route path="*" element={<Home /> }/>
+    {/* Ce path affiche la page d'accueil si l'url ne corespond à rien */}
+    <Route path="*" element={<Home /> }/> </UserProfileContextProvider>
    </Routes>
- </UserProfileContextProvider>
+
    </BrowserRouter>
 
   );
