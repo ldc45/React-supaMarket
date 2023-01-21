@@ -1,13 +1,13 @@
 {
-  "main.css": "/React-supaMarket/static/css/main.d6acc4c0.chunk.css",
-  "main.js": "/React-supaMarket/static/js/main.55a9f2f6.chunk.js",
-  "main.js.map": "/React-supaMarket/static/js/main.55a9f2f6.chunk.js.map",
-  "static/js/1.28cdc5a0.chunk.js": "/React-supaMarket/static/js/1.28cdc5a0.chunk.js",
-  "static/js/1.28cdc5a0.chunk.js.map": "/React-supaMarket/static/js/1.28cdc5a0.chunk.js.map",
-  "runtime~main.js": "/React-supaMarket/static/js/runtime~main.b3b061a6.js",
-  "runtime~main.js.map": "/React-supaMarket/static/js/runtime~main.b3b061a6.js.map",
-  "static/css/main.d6acc4c0.chunk.css.map": "/React-supaMarket/static/css/main.d6acc4c0.chunk.css.map",
-  "index.html": "/React-supaMarket/index.html",
-  "precache-manifest.b49095ecd8ed66de5af1d27ecf44a23e.js": "/React-supaMarket/precache-manifest.b49095ecd8ed66de5af1d27ecf44a23e.js",
-  "service-worker.js": "/React-supaMarket/service-worker.js"
+  "main.css": "/static/css/main.d6acc4c0.chunk.css",
+  "main.js": "/static/js/main.ba0aa16d.chunk.js",
+  "main.js.map": "/static/js/main.ba0aa16d.chunk.js.map",
+  "static/js/1.28cdc5a0.chunk.js": "/static/js/1.28cdc5a0.chunk.js",
+  "static/js/1.28cdc5a0.chunk.js.map": "/static/js/1.28cdc5a0.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.d6acc4c0.chunk.css.map": "/static/css/main.d6acc4c0.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.dc4cba4319340dfedf0991c15a8b0e80.js": "/precache-manifest.dc4cba4319340dfedf0991c15a8b0e80.js",
+  "service-worker.js": "/service-worker.js"
 }
