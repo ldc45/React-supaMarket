@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8a050ec018c5dc668cf8",
+    "revision": "6120cf07ba5af6dcabfd",
     "url": "/React-supaMarket/static/css/main.d6acc4c0.chunk.css"
   },
   {
-    "revision": "8a050ec018c5dc668cf8",
-    "url": "/React-supaMarket/static/js/main.8a050ec0.chunk.js"
+    "revision": "6120cf07ba5af6dcabfd",
+    "url": "/React-supaMarket/static/js/main.6120cf07.chunk.js"
   },
   {
     "revision": "28cdc5a0ba160ec7e728",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/React-supaMarket/static/js/runtime~main.b3b061a6.js"
   },
   {
-    "revision": "778f41f2b62585db19b77de4b11204d7",
+    "revision": "199d4ef6ad1c9de096a2396807a5ce1d",
     "url": "/React-supaMarket/index.html"
   }
 ];
