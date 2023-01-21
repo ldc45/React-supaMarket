@@ -13,7 +13,7 @@ const App = props => {
   }, [products, saveLocalStorage])
 
   return (
-   <BrowserRouter>
+   <BrowserRouter  basename="/">
     <UserProfileContextProvider>
    <Routes>
   <Route path="/" element={<Home />}/>
